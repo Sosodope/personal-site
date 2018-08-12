@@ -3,9 +3,11 @@
  */
 
 // Colors
-$color-base: #222;
-$color-primary: #5d93ff;
-$color-secondary: #f7a046;
+$color-base: #e6a0c4;
+$color-primary: #c6cdf8;
+$color-secondary: #d8a499;
+$color-iceberg: #7294d4;
+$color-plum: #5d1401;
 
 $color-white: lighten($color-base, 100%);
 $color-gray: lighten($color-base, 40%);
@@ -13,7 +15,8 @@ $color-gray-border: lighten($color-base, 77%);
 $color-gray-bg: lighten($color-base, 79%);
 
 // Typographic
-$typographic-font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$typographic-font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial',
+  sans-serif;
 
 $typographic-root-font-size: 100;
 $typographic-base-font-size: 16px;
@@ -21,11 +24,14 @@ $typographic-small-font-size: 14px;
 
 $typographic-base-line-height: 1.625;
 
-$typographic-base-font-color: $color-base;
-$typographic-link-p-font-color: $color-primary;
+$typographic-base-font-color: $color-primary;
+$typographic-base-font-color-hover: $color-white;
+$typographic-link-p-font-color: $color-iceberg;
 $typographic-link-s-font-color: $color-secondary;
 
-$typographic-leading: round(16 * ($typographic-root-font-size / 100) * $typographic-base-line-height);
+$typographic-leading: round(
+  16 * ($typographic-root-font-size / 100) * $typographic-base-line-height
+);
 
 // Layout
 $layout-post-single-max-width: 945px;
