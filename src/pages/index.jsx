@@ -16,6 +16,7 @@ class IndexRoute extends React.Component {
     posts.forEach(post => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
     })
+    const { location } = this.props
     const isMore = get(location, 'pathname', '/') === '/more'
     return (
       <div>
