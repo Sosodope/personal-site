@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '../Sidebar'
+import AboutPanel from '../AboutPanel'
 import './style.scss'
 import Menu from '../Menu'
 
@@ -11,15 +11,17 @@ class PageTemplateDetails extends React.Component {
     return (
       <div>
         <Menu data={menu} />
-        <Sidebar {...this.props} />
-        <div className="content">
-          <div className="content__inner">
-            <div className="page">
-              <h1 className="page__title">{page.frontmatter.title}</h1>
-              <div
-                className="page__body"
-                dangerouslySetInnerHTML={{ __html: page.html }}
-              />
+        <div className="page__content">
+          <AboutPanel {...this.props} />
+          <div className="content">
+            <div className="content__inner">
+              <div className="page">
+                <h1 className="page__title">{page.frontmatter.title}</h1>
+                <div
+                  className="page__body"
+                  dangerouslySetInnerHTML={{ __html: page.html }}
+                />
+              </div>
             </div>
           </div>
         </div>

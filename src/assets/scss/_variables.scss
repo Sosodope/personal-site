@@ -1,6 +1,7 @@
 /** 
  * Variables
  */
+@import url('https://fonts.googleapis.com/css?family=Bangers');
 
 // Colors
 $color-base: #e6a0c4;
@@ -17,6 +18,7 @@ $color-gray-bg: lighten($color-base, 79%);
 // Typographic
 $typographic-font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial',
   sans-serif;
+$typographic-heading-font-family: 'Bangers', cursive;
 
 $typographic-root-font-size: 100;
 $typographic-base-font-size: 16px;

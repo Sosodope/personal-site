@@ -1,11 +1,10 @@
 import React from 'react'
 import get from 'lodash/get'
 import Link from 'gatsby-link'
-import Links from '../Links'
 import profilePic from '../../pages/photo.jpg'
 import './style.scss'
 
-class Sidebar extends React.Component {
+class AboutPanel extends React.Component {
   render() {
     const { location } = this.props
     const { author, subtitle } = this.props.data.site.siteMetadata
@@ -43,13 +42,10 @@ class Sidebar extends React.Component {
       <div className="sidebar">
         <div className="sidebar__inner">
           <div className="sidebar__author">{authorBlock}</div>
-          <div>
-            <Links data={author} />
-          </div>
         </div>
       </div>
     )
   }
 }
 
-export default Sidebar
+export default AboutPanel

@@ -1,8 +1,12 @@
 import React from 'react'
+import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Post from '../components/Post'
-import Sidebar from '../components/Sidebar'
+import AboutPanel from '../components/AboutPanel'
+import ContactPanel from '../components/ContactPanel'
+import ProjectsPanel from '../components/ProjectsPanel'
 import Menu from '../components/Menu'
+import Footer from '../components/Footer'
 
 class IndexRoute extends React.Component {
   render() {
@@ -12,7 +16,7 @@ class IndexRoute extends React.Component {
     posts.forEach(post => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
     })
-
+    const isMore = get(location, 'pathname', '/') === '/more'
     return (
       <div>
         <Helmet>
@@ -21,13 +25,17 @@ class IndexRoute extends React.Component {
         </Helmet>
         <Menu data={menu} />
         <div className="panels">
-          <Sidebar {...this.props} />
-          <Sidebar {...this.props} />
-          <Sidebar {...this.props} />
+          <AboutPanel {...this.props} />
+          <ProjectsPanel {...this.props} />
+          <ContactPanel {...this.props} />
         </div>
-        <div className="content">
-          <div className="content__inner">{items}</div>
-        </div>
+        {isMore ? (
+          <div className="content">
+            <div className="content__inner">{items}</div>
+          </div>
+        ) : (
+          <Footer />
+        )}
       </div>
     )
   }

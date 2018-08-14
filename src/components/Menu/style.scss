@@ -6,6 +6,7 @@
   &__list {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     list-style: none;
     padding: 5px;
     margin: 0;
@@ -24,28 +25,20 @@
         &:focus {
           color: $typographic-base-font-color-hover;
           background-color: $color-base;
-          border-radius: 5px;
         }
         &--active {
           color: $typographic-base-font-color-hover;
           background-color: $color-base;
-          border-radius: 5px;
         }
       }
-      // &:first-of-type {
-      //   &:hover,
-      //   &:focus {
-      //     color: $color-primary;
-      //     border: none;
-      //   }
-      //   &--active {
-      //     color: $color-base;
-      //     border: none;
-      //   }
-      //   a {
-      //     font-size: $typographic-base-font-size;
-      //   }
-      // }
+      &:first-of-type {
+        a {
+          font-family: $typographic-heading-font-family;
+          font-size: 3.125rem;
+          color: $typographic-base-font-color;
+          background-color: $color-white;
+        }
+      }
     }
   }
 }
