@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
+    url: 'https://sonamdolkarpenjore.me',
     title: 'Sonam Dolkar Penjore',
-    subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    subtitle: 'Aspiring Frontend Web Developer',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
@@ -32,6 +31,10 @@ module.exports = {
       github: '#',
       rss: '#',
       vk: '#',
+    },
+    contactTitle: 'Where to find me',
+    projects: {
+      name: 'བསོད་ནམས་སྒྲོལ་དཀར་དཔལ་འབྱོར',
     },
   },
   plugins: [
