@@ -17,7 +17,7 @@
       color: $color-iceberg;
       &:hover,
       &:focus {
-        color: $color-secondary;
+        color: $color-primary;
       }
     }
     &-subtitle {
@@ -62,10 +62,22 @@
     font-size: $typographic-small-font-size;
   }
 }
-.projects__page-button {
-  background-color: #7294d4;
-  padding: 10px 15px;
-  box-shadow: 1px 1px 1px grey;
+.projects {
+  &__page {
+    text-align: center;
+    &-button {
+      margin-top: 6px;
+      display: inline-block;
+      color: $color-iceberg;
+      padding: 10px 15px;
+      box-shadow: 1px 1px 1px $color-gray;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        background-color: $color-base;
+        color: $color-white;
+      }
+    }
+  }
 }
 @include breakpoint-sm {
   .sidebar {

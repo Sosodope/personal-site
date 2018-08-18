@@ -8,7 +8,7 @@ class AboutPanel extends React.Component {
     const { projects } = this.props.data.site.siteMetadata
 
     const projectsBlock = (
-      <div>
+      <div className="projects__page">
         <h2 className="sidebar__author-title">{projects.name}</h2>
         <Link to="/projects">
           <img
