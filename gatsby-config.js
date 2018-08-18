@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     url: 'https://sonamdolkarpenjore.me',
     title: 'Sonam Dolkar Penjore',
-    subtitle: 'Aspiring Frontend Web Developer',
+    subtitle:
+      'Aspiring Frontend Web Developer from Bhutan. Currently in Bangkok, Thailand.',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
@@ -15,26 +16,29 @@ module.exports = {
         path: '/about/',
       },
       {
-        label: 'Contact me',
-        path: '/contact/',
+        label: 'Projects',
+        path: '/projects/',
       },
       {
-        label: 'More',
-        path: '/more/',
+        label: 'Contact me',
+        path: '/contact/',
       },
     ],
     author: {
       name: 'Sonam Dolkar Penjore',
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vk: '#',
+      email: 'sodopenjore@outlook.com',
+      linkedin: 'sonamdpenjore',
+      twitter: 'sdolkar',
+      github: 'Sosodope',
+      codepen: 'sonamdp',
     },
     contactTitle: 'Where to find me',
-    projects: {
+    contentTitle: 'Some of my writings',
+    dzongkha: {
       name: 'བསོད་ནམས་སྒྲོལ་དཀར་དཔལ་འབྱོར',
+    },
+    projects: {
+      name: 'Recent Projects',
     },
   },
   plugins: [

@@ -7,12 +7,37 @@
     position: relative;
     padding: 25px 20px 0;
   }
+  &__panel {
+    &-title {
+      font-size: $typographic-base-font-size * 2.225;
+      font-weight: 500;
+      text-align: center;
+      @include line-height(1.125);
+
+      color: $color-iceberg;
+
+      &:hover,
+      &:focus {
+        border-right: 2px solid $color-base;
+      }
+    }
+    &-subtitle {
+      color: $color-gray;
+      @include line-height(1);
+      @include margin-bottom(1);
+    }
+  }
   &__author {
     &-photo {
       display: inline-block;
       margin-bottom: 0;
       border-radius: 50%;
       background-clip: padding-box;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.05);
+        opacity: 0.85;
+      }
     }
     &-title {
       font-size: $typographic-base-font-size * 1.125;
@@ -38,7 +63,23 @@
     font-size: $typographic-small-font-size;
   }
 }
-
+.projects {
+  &__page {
+    text-align: center;
+    &-button {
+      margin-top: 6px;
+      display: inline-block;
+      color: $color-iceberg;
+      padding: 10px 15px;
+      box-shadow: 1px 1px 1px $color-gray;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        background-color: $color-base;
+        color: $color-white;
+      }
+    }
+  }
+}
 @include breakpoint-sm {
   .sidebar {
     // lost-column: 5/12;

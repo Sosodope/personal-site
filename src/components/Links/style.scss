@@ -6,21 +6,23 @@
   &__list {
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 10px -3px;
+    justify-content: space-evenly;
+    padding-left: 0;
     &-item {
       padding: 0;
       margin: 0 3px;
       height: 24px;
-      width: 24px;
-      line-height: 24px;
+      width: 34px;
+      line-height: 34px;
       border-radius: 3px;
       text-align: center;
       background: $color-primary;
       & a {
         border: 0;
         & i {
-          font-size: 14px;
+          font-size: 24px;
+          margin-left: 10px;
+          margin-right: 10px;
           color: lighten($color-primary, 20%);
         }
         &:hover,

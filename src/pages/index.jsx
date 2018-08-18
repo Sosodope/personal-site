@@ -1,5 +1,4 @@
 import React from 'react'
-import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Post from '../components/Post'
 import AboutPanel from '../components/AboutPanel'
@@ -16,8 +15,6 @@ class IndexRoute extends React.Component {
     posts.forEach(post => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
     })
-    const { location } = this.props
-    const isMore = get(location, 'pathname', '/') === '/more'
     return (
       <div>
         <Helmet>
@@ -30,13 +27,12 @@ class IndexRoute extends React.Component {
           <ProjectsPanel {...this.props} />
           <ContactPanel {...this.props} />
         </div>
-        {isMore ? (
-          <div className="content">
-            <div className="content__inner">{items}</div>
-          </div>
-        ) : (
-          <Footer />
-        )}
+
+        <div className="content">
+          {/* <h4>{contentTitle}</h4> */}
+          <div className="content__inner">{items}</div>
+        </div>
+        <Footer />
       </div>
     )
   }
@@ -51,6 +47,13 @@ export const pageQuery = graphql`
         title
         subtitle
         copyright
+        contactTitle
+        projects {
+          name
+        }
+        dzongkha {
+          name
+        }
         menu {
           label
           path
@@ -58,11 +61,10 @@ export const pageQuery = graphql`
         author {
           name
           email
-          telegram
+          linkedin
           twitter
           github
-          rss
-          vk
+          codepen
         }
       }
     }

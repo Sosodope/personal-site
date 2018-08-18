@@ -1,5 +1,4 @@
 import React from 'react'
-import Sidebar from '../components/Sidebar'
 
 class NotFoundRoute extends React.Component {
   render() {
@@ -38,11 +37,10 @@ export const pageQuery = graphql`
         author {
           name
           email
-          telegram
+          linkedin
           twitter
           github
-          rss
-          vk
+          codepen
         }
       }
     }
