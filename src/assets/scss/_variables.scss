@@ -10,6 +10,7 @@ $color-secondary: #d8a499;
 $color-iceberg: #c6cdf8;
 $color-plum: #5d1401;
 
+$color-black: darken($color-base, 100%);
 $color-white: lighten($color-base, 100%);
 $color-gray: lighten($color-base, 40%);
 $color-gray-border: lighten($color-base, 77%);

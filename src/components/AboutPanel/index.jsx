@@ -1,17 +1,19 @@
 import React from 'react'
-import get from 'lodash/get'
 import Link from 'gatsby-link'
 import profilePic from '../../pages/photo.jpg'
 import './style.scss'
 
 class AboutPanel extends React.Component {
   render() {
-    const { location } = this.props
     const { author, subtitle } = this.props.data.site.siteMetadata
-    const isHomePage = get(location, 'pathname', '/') === '/'
 
     const authorBlock = (
-      <div>
+      <div className="sidebar__author-content">
+        <h1 className="sidebar__author-title">
+          <Link className="sidebar__author-title-link" to="/">
+            {author.name}
+          </Link>
+        </h1>
         <Link to="/">
           <img
             src={profilePic}
@@ -21,19 +23,6 @@ class AboutPanel extends React.Component {
             alt={author.name}
           />
         </Link>
-        {isHomePage ? (
-          <h1 className="sidebar__author-title">
-            <Link className="sidebar__author-title-link" to="/">
-              {author.name}
-            </Link>
-          </h1>
-        ) : (
-          <h2 className="sidebar__author-title">
-            <Link className="sidebar__author-title-link" to="/">
-              {author.name}
-            </Link>
-          </h2>
-        )}
         <p className="sidebar__author-subtitle">{subtitle}</p>
       </div>
     )

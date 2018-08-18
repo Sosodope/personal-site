@@ -6,13 +6,13 @@ import './style.scss'
 
 class AboutPanel extends React.Component {
   render() {
-    const { contactTitle, author } = this.props.data.site.siteMetadata
+    const { contactTitle, author, dzongkha } = this.props.data.site.siteMetadata
 
     const contactPageTitle = (
-      <h2 className="sidebar__author-subtitle">
-        {/* {contactTitle} */}
-        Where to find me
-      </h2>
+      <div>
+        <h2 className="sidebar__panel-title">{dzongkha.name}</h2>
+        <h4 className="sidebar__author-subtitle">{contactTitle}</h4>
+      </div>
     )
 
     return (

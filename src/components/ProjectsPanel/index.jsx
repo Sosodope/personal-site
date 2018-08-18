@@ -9,12 +9,7 @@ class AboutPanel extends React.Component {
 
     const projectsBlock = (
       <div>
-        <h2 className="sidebar__author-title">
-          <Link className="sidebar__author-title-link" to="/">
-            {/* {projects.name} */}
-            Coming soon
-          </Link>
-        </h2>
+        <h2 className="sidebar__panel-title">{projects.name}</h2>
       </div>
     )
 

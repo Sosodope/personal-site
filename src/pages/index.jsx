@@ -29,9 +29,9 @@ class IndexRoute extends React.Component {
         </div>
 
         <div className="content">
+          {/* <h4>{contentTitle}</h4> */}
           <div className="content__inner">{items}</div>
         </div>
-
         <Footer />
       </div>
     )
@@ -49,6 +49,9 @@ export const pageQuery = graphql`
         copyright
         contactTitle
         projects {
+          name
+        }
+        dzongkha {
           name
         }
         menu {
