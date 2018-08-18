@@ -6,17 +6,24 @@ class Links extends React.Component {
   render() {
     const author = this.props.data
     const links = {
-      telegram: author.telegram,
+      linkedin: author.linkedin,
       twitter: author.twitter,
       github: author.github,
-      vk: author.vk,
-      rss: author.rss,
+      codepen: author.codepen,
       email: author.email,
     }
 
     return (
       <div className="links">
         <ul className="links__list">
+          <li className="links__list-item">
+            <a
+              href={`https://www.linkedin.com/${links.linkedin}`}
+              target="_blank"
+            >
+              <i className="icon-linkedin" />
+            </a>
+          </li>
           <li className="links__list-item">
             <a
               href={`https://www.twitter.com/${links.twitter}`}
@@ -28,6 +35,11 @@ class Links extends React.Component {
           <li className="links__list-item">
             <a href={`https://www.github.com/${links.github}`} target="_blank">
               <i className="icon-github" />
+            </a>
+          </li>
+          <li className="links__list-item">
+            <a href={`https://www.codepen.io/${links.codepen}`} target="_blank">
+              <i className="icon-codepen" />
             </a>
           </li>
           <li className="links__list-item">

@@ -9,7 +9,7 @@ class AboutPanel extends React.Component {
 
     const authorBlock = (
       <div className="sidebar__author-content">
-        <h1 className="sidebar__author-title">
+        <h1 className="sidebar__panel-title">
           <Link className="sidebar__author-title-link" to="/">
             {author.name}
           </Link>
