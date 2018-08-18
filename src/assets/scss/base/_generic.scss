@@ -151,6 +151,8 @@ figcaption {
 }
 
 .content {
+  margin-left: 0;
+  margin: 0 auto;
   &__inner {
     padding: 25px 20px;
   }
@@ -182,7 +184,8 @@ figcaption {
     float: left;
   }
   .content {
-    lost-column: 7/12;
+    margin-left: 0;
+    margin: 0 auto;
     &__inner {
       padding: 30px 20px;
     }
@@ -191,7 +194,8 @@ figcaption {
 
 @include breakpoint-md {
   .content {
-    lost-column: 2/3;
+    margin-left: 0;
+    margin: 0 auto;
     &__inner {
       padding: 40px 35px;
     }

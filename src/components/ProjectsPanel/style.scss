@@ -15,9 +15,10 @@
       @include line-height(1.125);
 
       color: $color-iceberg;
+
       &:hover,
       &:focus {
-        color: $color-primary;
+        border-right: 2px solid $color-base;
       }
     }
     &-subtitle {
