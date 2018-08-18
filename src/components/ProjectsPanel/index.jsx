@@ -1,6 +1,6 @@
 import React from 'react'
-import get from 'lodash/get'
 import Link from 'gatsby-link'
+import projectsPic from '../../assets/images/latest-projects.png'
 import './style.scss'
 
 class AboutPanel extends React.Component {
@@ -10,6 +10,18 @@ class AboutPanel extends React.Component {
     const projectsBlock = (
       <div>
         <h2 className="sidebar__author-title">{projects.name}</h2>
+        <Link to="/projects">
+          <img
+            src={projectsPic}
+            className="sidebar__author-photo"
+            width="400"
+            height="400"
+            alt={projects.name}
+          />
+        </Link>
+        <Link to="/projects" className="projects__page-button">
+          Check out my projects
+        </Link>
       </div>
     )
 
