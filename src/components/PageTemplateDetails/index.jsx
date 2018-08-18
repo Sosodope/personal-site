@@ -1,7 +1,9 @@
 import React from 'react'
-import AboutPanel from '../AboutPanel'
 import './style.scss'
 import Menu from '../Menu'
+import get from 'lodash/get'
+import Footer from '../Footer'
+import Post from '../Post'
 
 class PageTemplateDetails extends React.Component {
   render() {
@@ -12,7 +14,6 @@ class PageTemplateDetails extends React.Component {
       <div>
         <Menu data={menu} />
         <div className="page__content">
-          <AboutPanel {...this.props} />
           <div className="content">
             <div className="content__inner">
               <div className="page">
@@ -25,6 +26,7 @@ class PageTemplateDetails extends React.Component {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     )
   }

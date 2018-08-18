@@ -6,8 +6,10 @@ const Footer = props => {
 
   return (
     <div className="footer">
-      {/* <p className="footer__copyright">{copyright}</p> */}
-      <p>&copy; Sosodope {new Date().getFullYear()}</p>
+      <p className="footer__copyright">
+        &copy; Sosodope {new Date().getFullYear()}
+        {/* {copyright} */}
+      </p>
     </div>
   )
 }
