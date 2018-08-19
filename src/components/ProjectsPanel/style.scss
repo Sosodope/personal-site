@@ -34,6 +34,7 @@
       border-radius: 50%;
       background-clip: padding-box;
       transition: all 0.5s ease-in-out;
+      height: auto;
       &:hover {
         transform: scale(1.05);
         opacity: 0.85;

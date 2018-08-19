@@ -10,7 +10,7 @@ You can connect with me online on LinkedIn or Twitter. You can find my current p
 
 ## Get in touch with me
 
-- [**LinkedIn**](https://www.google.com)
-- [**Github**](https://www.google.com)
-- [**CodePen**](https://www.google.com)
-- [**Twitter**](https://www.google.com)
+- [**LinkedIn**](https://www.linkedin.com/in/sonamdpenjore/)
+- [**Github**](https://github.com/Sosodope)
+- [**CodePen**](https://codepen.io/Sonamdp/)
+- [**Twitter**](https://www.linkedin.com/in/sonamdpenjore/)
