@@ -10,7 +10,12 @@ import Footer from '../components/Footer'
 class IndexRoute extends React.Component {
   render() {
     const items = []
-    const { title, subtitle, menu } = this.props.data.site.siteMetadata
+    const {
+      title,
+      subtitle,
+      menu,
+      copyright,
+    } = this.props.data.site.siteMetadata
     const posts = this.props.data.allMarkdownRemark.edges
     posts.forEach(post => {
       items.push(<Post data={post} key={post.node.fields.slug} />)
@@ -32,7 +37,7 @@ class IndexRoute extends React.Component {
           {/* <h4>{contentTitle}</h4> */}
           <div className="content__inner">{items}</div>
         </div>
-        <Footer />
+        <Footer {...this.props} />
       </div>
     )
   }

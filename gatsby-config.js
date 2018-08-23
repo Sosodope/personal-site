@@ -3,8 +3,8 @@ module.exports = {
     url: 'https://sonamdolkarpenjore.me',
     title: 'Sonam Dolkar Penjore',
     subtitle:
-      'Aspiring Frontend Web Developer from Bhutan. Currently in Bangkok, Thailand.',
-    copyright: '© All rights reserved.',
+      'Frontend Web Developer from Bhutan. Currently in Bangkok, Thailand.',
+    copyright: '© Sonam Dolkar Penjore',
     disqusShortname: '',
     menu: [
       {

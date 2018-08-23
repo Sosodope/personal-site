@@ -26,7 +26,7 @@ class PageTemplateDetails extends React.Component {
             </div>
           </div>
         </div>
-        <Footer />
+        <Footer {...this.props} />
       </div>
     )
   }
