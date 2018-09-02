@@ -8,7 +8,7 @@ category: 'Web Development'
 tags:
   - 'React'
   - 'Sass'
-  - 'Preprocessor
+  - 'Preprocessor'
   - 'Web Development'
 description: 'Setting up Sass for CRA'
 ---
