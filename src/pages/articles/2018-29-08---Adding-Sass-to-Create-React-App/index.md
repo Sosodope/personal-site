@@ -1,15 +1,16 @@
 ---
-title: Styling with Bulma(Sass)
+title: Adding Sass to Create React App
 date: '2018-08-29T22:40:32.169Z'
 layout: post
 draft: false
-path: '/posts/styling-with-bulma/'
+path: '/posts/adding-sass-to-create-react-app/'
 category: 'Web Development'
 tags:
   - 'React'
-  - 'Styling'
+  - 'Sass'
+  - 'Preprocessor
   - 'Web Development'
-description: 'Styling your React App with Bulma, using Sass'
+description: 'Setting up Sass for CRA'
 ---
 
 ## The Set up
