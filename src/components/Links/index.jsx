@@ -18,7 +18,7 @@ class Links extends React.Component {
         <ul className="links__list">
           <li className="links__list-item">
             <a
-              href={`https://www.linkedin.com/${links.linkedin}`}
+              href={`https://www.linkedin.com/in/${links.linkedin}`}
               target="_blank"
             >
               <i className="icon-linkedin" />
