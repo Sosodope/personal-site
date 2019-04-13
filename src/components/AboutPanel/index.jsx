@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import profilePic from '../../pages/photo.jpg'
+import profilePic from '../../pages/profile-pic.jpg'
 import './style.scss'
 
 class AboutPanel extends React.Component {

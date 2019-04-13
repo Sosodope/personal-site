@@ -2,7 +2,7 @@ import React from 'react'
 import get from 'lodash/get'
 import Link from 'gatsby-link'
 import Links from '../Links'
-import profilePic from '../../pages/photo.jpg'
+import profilePic from '../../pages/profile-pic.jpg'
 import './style.scss'
 
 class Sidebar extends React.Component {
