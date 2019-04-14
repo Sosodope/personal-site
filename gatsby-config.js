@@ -9,20 +9,20 @@ module.exports = {
     menu: [
       {
         label: 'SDP',
-        path: '/',
+        path: '/'
       },
       {
         label: 'About me',
-        path: '/about/',
+        path: '/about/'
       },
       {
         label: 'Projects',
-        path: '/projects/',
+        path: '/projects/'
       },
       {
         label: 'Contact me',
-        path: '/contact/',
-      },
+        path: '/contact/'
+      }
     ],
     author: {
       name: 'Sonam Dolkar Penjore',
@@ -30,24 +30,29 @@ module.exports = {
       linkedin: 'sonamdpenjore',
       twitter: 'sdolkar',
       github: 'Sosodope',
-      codepen: 'sonamdp',
+      codepen: 'sonamdp'
     },
     contactTitle: 'Where to find me',
     contentTitle: 'Some of my writings',
-    dzongkha: {
-      name: 'བསོད་ནམས་སྒྲོལ་དཀར་དཔལ་འབྱོར',
-    },
-    projects: {
-      name: 'Recent Projects',
-    },
+    dzongkha: { name: 'བསོད་ནམས་སྒྲོལ་དཀར་དཔལ་འབྱོར' },
+    projects: { name: 'Recent Projects' }
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-138296088-1',
+        head: false,
+        anonymize: true,
+        respectDNT: true
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
-      },
+        name: 'pages'
+      }
     },
     {
       resolve: 'gatsby-plugin-feed',
@@ -73,8 +78,7 @@ module.exports = {
                   url: site.siteMetadata.site_url + edge.node.fields.slug,
                   guid: site.siteMetadata.site_url + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': edge.node.html }],
-                })
-              ),
+                })),
             query: `
               {
                 allMarkdownRemark(
@@ -100,10 +104,10 @@ module.exports = {
                 }
               }
             `,
-            output: '/rss.xml',
-          },
-        ],
-      },
+            output: '/rss.xml'
+          }
+        ]
+      }
     },
     {
       resolve: 'gatsby-transformer-remark',
@@ -111,31 +115,27 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 960,
-            },
+            options: { maxWidth: 960 }
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
-            options: { wrapperStyle: 'margin-bottom: 1.0725rem' },
+            options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
-        ],
-      },
+          'gatsby-remark-smartypants'
+        ]
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-73379983-2' },
+      options: { trackingId: 'UA-73379983-2' }
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`roboto\:400,400i,500,700`],
-      },
+      options: { fonts: [`roboto\:400,400i,500,700`] }
     },
     {
       resolve: 'gatsby-plugin-sitemap',
@@ -161,18 +161,18 @@ module.exports = {
           }`,
         output: '/sitemap.xml',
         serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
+          allSitePage.edges.map((edge) => {
             return {
               url: site.siteMetadata.url + edge.node.path,
               changefreq: 'daily',
-              priority: 0.7,
-            }
-          }),
-      },
+              priority: 0.7
+            };
+          })
+      }
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-postcss-sass',
-  ],
-}
+    'gatsby-plugin-postcss-sass'
+  ]
+};
