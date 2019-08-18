@@ -40,21 +40,6 @@ Personal Project. Bootstrapped with CRA, getting current weather data for locati
 [**Code**](https://github.com/Sosodope/weather-app)
 [**Live Demo**](https://locationcurrentweather.herokuapp.com/)
 
-### SAFE Gardening
-
-Website for SAFE Gardening, a non-profit organization. Original website made with HTML/JS/Sass.
-
-Later on converted to WordPress website using Underscores (WordPress Starter Theme)
-
-**Stack:** HTML, Sass, JavaScript and WordPress.
-
-**Idea:** Move previous site from Joomla and provide a clean, modern, responsive website for the SAFE team.
-
-![SAFE Gardening, non-profit organization website](./safe-gardening.png)
-
-[**Code**](https://github.com/chingu-voyage4/Geckos-Team-15)
-[**Live Demo**](http://www.safegardening.org/)
-
 ### CodePen Experiments
 
 Experimental Pure CSS images and Copywork with React.js on CodePen
